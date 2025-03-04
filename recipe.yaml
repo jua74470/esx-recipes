@@ -291,7 +291,7 @@ tasks:
 
   - action: download_github
     src: https://github.com/realsarge/frfuel-plus
-    ref: main
+    ref: master
     dest: ./tmp/addons/frfuelplus
 
   - action: download_github
