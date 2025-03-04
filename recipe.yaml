@@ -82,6 +82,21 @@ tasks:
   - action: query_database
     file: ./tmp/core/[SQL]/legacy15.sql
 
+  - action: query_database
+    file: ./tmp/core/[SQL]/legacy16.sql
+
+  - action: query_database
+    file: ./tmp/core/[SQL]/legacy17.sql
+
+  - action: query_database
+    file: ./tmp/core/[SQL]/legacy18.sql
+
+  - action: query_database
+    file: ./tmp/core/[SQL]/legacy19.sql
+
+  - action: query_database
+    file: ./tmp/core/[SQL]/legacy20.sql
+
   - action: download_github
     src: https://github.com/esx-framework/esx_addonaccount
     ref: main
