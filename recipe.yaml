@@ -285,14 +285,16 @@ tasks:
     dest: ./tmp/addons/traffic
 
   - action: download_github
-    src: https://github.com/epyis-scripts/epyi_administration
+    src: https://github.com/jua74470/epyi_administration
     ref: main
     dest: ./tmp/addons/epyi_administration
 
-  - action: download_github
-    src: https://github.com/realsarge/frfuel-plus
-    ref: master
-    dest: ./tmp/addons/frfuelplus
+  - action: download_file
+    path: ./tmp/files/frfuelplus.zip
+    url: https://github.com/realsarge/frfuel-plus/releases/download/1.1/frfuelplus.zip
+  - action: unzip
+    dest: ./tmp/addons
+    src: ./tmp/files/frfuelplus.zip
 
   - action: download_github
     src: https://github.com/jua74470/loading-screen-fivem
