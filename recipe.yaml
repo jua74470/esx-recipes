@@ -16,7 +16,7 @@ tasks:
   
   # Download and prepare server.cfg / loadingscreen / database
   - action: download_github
-    src: https://github.com/esx-framework/esx-recipes
+    src: https://github.com/jua74470/esx-recipes
     ref: legacy
     dest: ./tmp/recipe
 
@@ -277,29 +277,29 @@ tasks:
   - action: download_github
     src: https://github.com/jua74470/esxradio
     ref: main
-    dest: ./tmp/addons/radio
+    dest: ./resources/[perso]/radio
 
   - action: download_github
     src: https://github.com/jua74470/esxtraffic
     ref: main
-    dest: ./tmp/addons/traffic
+    dest: ./resources/[perso]/traffic
 
   - action: download_github
     src: https://github.com/jua74470/epyi_administration
     ref: main
-    dest: ./tmp/addons/epyi_administration
+    dest: ./resources/[perso]/epyi_administration
 
   - action: download_file
     path: ./tmp/files/frfuelplus.zip
     url: https://github.com/realsarge/frfuel-plus/releases/download/1.1/frfuelplus.zip
   - action: unzip
-    dest: ./tmp/addons
+    dest: ./resources/[perso]/
     src: ./tmp/files/frfuelplus.zip
 
   - action: download_github
     src: https://github.com/jua74470/loading-screen-fivem
     ref: main
-    dest: ./tmp/addons/loading-screen-fivem
+    dest: ./resources/[perso]/loading-screen-fivem
 
   - action: move_path
     src: ./tmp/addons/
