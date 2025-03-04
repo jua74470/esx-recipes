@@ -277,7 +277,27 @@ tasks:
   - action: download_github
     src: https://github.com/jua74470/esxradio
     ref: main
-    dest: ./resources/radio
+    dest: ./tmp/addons/radio
+
+  - action: download_github
+    src: https://github.com/jua74470/esxtraffic
+    ref: main
+    dest: ./tmp/addons/traffic
+
+  - action: download_github
+    src: https://github.com/epyis-scripts/epyi_administration
+    ref: main
+    dest: ./tmp/addons/epyi_administration
+
+  - action: download_github
+    src: https://github.com/realsarge/frfuel-plus
+    ref: main
+    dest: ./tmp/addons/frfuelplus
+
+  - action: download_github
+    src: https://github.com/jua74470/loading-screen-fivem
+    ref: main
+    dest: ./tmp/addons/loading-screen-fivem
 
   - action: move_path
     src: ./tmp/addons/
