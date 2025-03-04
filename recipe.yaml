@@ -235,6 +235,11 @@ tasks:
     src: ./tmp/core/[core]
     dest: ./resources/[core]
 
+  - action: download_github
+    src: https://github.com/jua74470/esxradio
+    ref: main
+    dest: ./resources/radio
+
   - action: move_path
     src: ./tmp/addons/
     dest: ./resources/[esx_addons]
